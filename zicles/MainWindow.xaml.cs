@@ -118,5 +118,47 @@ namespace zicles
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Random rnd = new Random();
+            int n = rnd.Next(1, 20);
+            input.Text = n.ToString();
+            int s = 0;
+            for(int i=1;i<=n;i++)
+            {
+                if (i != 10) s += i;
+                else break;
+            }
+            Result.Text = s.ToString();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Random rnd = new Random();
+            int n = rnd.Next(1, 100);
+            input.Text = n.ToString();
+            int s = 0;
+            for(int i=1;i<=n;i++)
+            {
+                if (i % 2 == 0) s += i;
+                else continue;
+            }
+            Result.Text = s.ToString();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            string s = "";
+            for(int i=1;i<10;i++)
+            {
+                for(int j=1;j<10;j++)
+                {
+                    s += i * j + " ";
+                }
+                s += Environment.NewLine;
+            }
+            Result.Text = s;
+        }
     }
 }

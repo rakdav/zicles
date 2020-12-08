@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zicles"
         mc:Ignorable="d"
-        Title="Циклы" Height="450" Width="400" Background="MediumTurquoise">
+        Title="Циклы" Height="850" Width="400" Background="MediumTurquoise">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="0.6*"/>
             <RowDefinition Height="0.6*"/>
             <RowDefinition Height="0.6*"/>
             <RowDefinition Height="0.6*"/>
@@ -25,6 +29,9 @@
         <Button Grid.Row="1" Margin="10 10 10 10" Content="Цикл с предусловием" Click="Button_Click"/>
         <Button Grid.Row="2" Margin="10 10 10 10" Content="Цикл с постусловием" Click="Button_Click_1"/>
         <Button Grid.Row="3" Margin="10 10 10 10" Content="Цикл с параметром" Click="Button_Click_2"/>
-        <TextBlock x:Name="Result" Grid.Row="4" Margin="10 10 10 10" Background="White"/>
+        <Button Grid.Row="4" Margin="10 10 10 10" Content="Оператор break" Click="Button_Click_3"/>
+        <Button Grid.Row="5" Margin="10 10 10 10" Content="Оператор continue" Click="Button_Click_4"/>
+        <Button Grid.Row="6" Margin="10 10 10 10" Content="Таблица умножения" Click="Button_Click_5" />
+        <TextBlock x:Name="Result" Grid.Row="7" Grid.RowSpan="2"  Margin="10 10 10 10" Background="White"/>
     </Grid>
 </Window>
